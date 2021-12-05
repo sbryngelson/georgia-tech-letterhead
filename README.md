@@ -19,3 +19,7 @@ Then modify `template.tex` accordingly.
 ## Acknowledgement
 
 The skeleton of `gt-letterhead.sty` was copied from [Luke Olson's reproduction](https://github.com/lukeolson/illinois-letterhead) of the University of Illinois at Urbana-Champaign letterhead, though little of the original remains.
+
+## License
+
+MIT
