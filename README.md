@@ -6,9 +6,9 @@ I used the free typeface alternatives [suggested by the styleguide](https://bran
 
 ## How to use
 
-Copy the `gt-letterhead.sty` and `template.tex` and `assets/` to your working directory.
+Copy `gt-letterhead.sty`, `template.tex`, and `assets/` to your working directory.
 You will need `sig.png` or some other signature image if you want to use one.
-Then modify `template.tex` accordingly.
+Modify `template.tex` as appropriate and build with `pdflatex`.
 
 ## What it looks like
 
