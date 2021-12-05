@@ -12,14 +12,10 @@ Then modify `template.tex` accordingly.
 
 ## What it looks like
 
-[full pdf](./example/example.pdf)
-
-![example](./example/example.png "example")
+[Full PDF](template.pdf)
+![example1](example-img/ex-pg1.png "example1")
+![example2](example-img/ex-pg2.png "example2")
 
 ## Acknowledgement
 
 The skeleton of `gt-letterhead.sty` was copied from [Luke Olson's reproduction](https://github.com/lukeolson/illinois-letterhead) of the University of Illinois at Urbana-Champaign letterhead, though little of the original remains.
-
-## License
-
-MIT
