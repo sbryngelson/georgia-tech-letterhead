@@ -10,6 +10,19 @@ Copy `gt-letterhead.sty`, `template.tex`, and `assets/` to your working director
 You will need `sig.png` or some other signature image if you want to use one.
 Modify `template.tex` as appropriate and build with `pdflatex`.
 
+## Logo options
+
+I provide an argument to `gt-letterhead.sty` for using different header logos.
+The default is the Georgia Tech logo (no school affiliation). 
+You can provide others like this
+```
+% Logo Options: gt, coc, cse, cs, ic, scp
+\usepackage[cse]{gt-letterhead}
+```
+
+You still have to set the footer text yourself (default is "College of Computing").
+This is because the department guidelines are unclear on if you should specify the college or school.
+
 ## What it looks like
 
 [Full PDF](template.pdf)
