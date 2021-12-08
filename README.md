@@ -21,8 +21,11 @@ You can use others like this
 \usepackage[cse]{gt-letterhead}
 ```
 
-You still have to set the footer text yourself.
-This is because the department guidelines are unclear on if you should specify the college or school.
+You still have to set the footer text yourself like this
+```
+\fromdept{College of Computing}
+```
+because the department guidelines are unclear on if you should specify the college or school.
 
 ## What it looks like
 
