@@ -27,8 +27,43 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{gt-letterhead}[2021/12/05 v0.1 GT Letterhead]
 
+% options
+\providecommand\logofile{assets/gt.pdf}
+\providecommand\fromdept{College of Computing}
+
+\DeclareOption{cse}{
+    \renewcommand\logofile{assets/cse.pdf}
+    \renewcommand\fromdept{School of Computational Science and Engineering}
+}
+\DeclareOption{cs}{
+    \renewcommand\logofile{assets/cs.pdf}
+    \renewcommand\fromdept{School of Computer Science}
+}
+\DeclareOption{scp}{
+    \renewcommand\logofile{assets/scp.pdf}
+    \renewcommand\fromdept{School of Cybersecurity and Privacy}
+}
+\DeclareOption{ic}{
+    \renewcommand\logofile{assets/ic.pdf}
+    \renewcommand\fromdept{School of Interactive Computing}
+}
+
+\DeclareOption{coc}{
+    \renewcommand\logofile{assets/coc.pdf}
+    \renewcommand\fromdept{College of Computing}
+}
+
+\DeclareOption{gt}{
+    \renewcommand\logofile{assets/gt.pdf}
+    \renewcommand\fromdept{College of Computing}
+}
+
+\DeclareOption*{\PackageWarning{gt-letterhead}{Unknown option `\CurrentOption`}}
+\ProcessOptions\relax
+
+
 \DeclareRobustCommand{\fromdate}[1]{\DeclareRobustCommand\@fromdate{#1}}
-\DeclareRobustCommand{\fromdept}[1]{\DeclareRobustCommand\@fromdept{#1}}
+% \DeclareRobustCommand{\fromdept}[1]{\DeclareRobustCommand\@fromdept{#1}}
 \DeclareRobustCommand{\fromname}[1]{\DeclareRobustCommand\@fromname{#1 \\}}
 \DeclareRobustCommand{\fromemail}[1]{\DeclareRobustCommand\@fromemail{#1 \\}}
 \DeclareRobustCommand{\fromweb}[1]{\DeclareRobustCommand\@fromweb{#1}}
@@ -36,7 +71,7 @@
 \newcommand{\signaturefile}[1]{\def\@signaturefile{#1}}
 
 \signaturefile{}
-\fromdept{}
+% \fromdept{}
 \fromemail{}
 \fromweb{}
 \fromname{}
@@ -55,8 +90,7 @@
 \RequirePackage[top=1.75in,left=1.75in,bottom=2in,right=1.0in]{geometry}
 \RequirePackage{graphicx}
 
-% logo
-\providecommand\logofile{assets/GTExtended_CMYK.pdf}
+
 
 % remove coloring from URLs
 \RequirePackage[colorlinks=false,pdfborder={0 0 0}]{hyperref}
@@ -112,7 +146,7 @@
     \end{textblock*}
     \vspace{0.3in}
     \color{GTblue}
-    \fontsize{8}{12}\robotoMedium{\@fromdept} \\
+    \fontsize{8}{12}\robotoMedium{\fromdept} \\
     \fontsize{7}{12}\plexsans{Atlanta, Georgia 30332-0700 U.S.A.} \\
     \fontsize{7}{12}\plexsans{Phone: 404.894.9044} \\
     \bigskip
