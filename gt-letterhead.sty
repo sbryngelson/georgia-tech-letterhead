@@ -63,6 +63,7 @@
 \DeclareRobustCommand{\fromname}[1]{\DeclareRobustCommand\@fromname{#1 \\}}
 \DeclareRobustCommand{\fromemail}[1]{\DeclareRobustCommand\@fromemail{#1 \\}}
 \DeclareRobustCommand{\fromweb}[1]{\DeclareRobustCommand\@fromweb{#1}}
+\DeclareRobustCommand{\toaddress}[1]{\DeclareRobustCommand\@toaddress{#1}}
 \DeclareRobustCommand{\closing}[1]{\DeclareRobustCommand\@closing{#1}}
 \newcommand{\signaturefile}[1]{\def\@signaturefile{#1}}
 
@@ -71,6 +72,7 @@
 \fromemail{}
 \fromweb{}
 \fromname{}
+\toaddress{}
 \closing{}
 \fromdate{}
 
@@ -130,6 +132,7 @@
 
 \AtBeginDocument{%
     \vspace*{-0.25in}
+    \@toaddress \\
     \hfill\@fromdate
 }
 
