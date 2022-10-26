@@ -66,8 +66,10 @@
 \DeclareRobustCommand{\toaddress}[1]{\DeclareRobustCommand\@toaddress{#1}}
 \DeclareRobustCommand{\closing}[1]{\DeclareRobustCommand\@closing{#1}}
 \newcommand{\signaturefile}[1]{\def\@signaturefile{#1}}
+\newcommand{\aboutme}[1]{\def\@aboutme{#1}}
 
 \signaturefile{}
+\aboutme{}
 \fromdept{}
 \fromemail{}
 \fromweb{}
@@ -182,6 +184,8 @@
     \@fromname%
     \@fromemail%
     \@fromweb%
+
+    \ifthenelse{\equal{\@aboutme}{}}{}{\small \textit{About the letter writer:} \@aboutme}
 }
 
 \endinput
