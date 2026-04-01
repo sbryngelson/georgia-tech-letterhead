@@ -21,13 +21,13 @@ I provide an argument to `gt-letterhead.sty` for using different CoC college and
 The default is the Georgia Tech logo (no school affiliation). 
 You can use others like this
 
-```
+```tex
 % Logo Options: gt, coc, cse, cs, ic, scp, isye, soa
 \usepackage[cse]{gt-letterhead}
 ```
 
 You still have to set the footer text yourself like this
-```
+```tex
 \fromdept{College of Computing}
 ```
 because the department guidelines are unclear on if you should specify the college or school.
