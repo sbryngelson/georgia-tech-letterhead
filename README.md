@@ -8,7 +8,7 @@ I used the free typeface alternatives [suggested by the styleguide](https://bran
 
 Copy `gt-letterhead.sty`, `template.tex`, and `assets/` to your working directory.
 You will need `sig.png` or some other signature image if you want to use one.
-Modify `template.tex` as appropriate and build with `pdflatex`.
+Modify `template.tex` as appropriate and build with `pdflatex` or `latexmk`.
 
 ## Logo options
 
@@ -17,7 +17,7 @@ The default is the Georgia Tech logo (no school affiliation).
 You can use others like this
 
 ```
-% Logo Options: gt, coc, cse, cs, ic, scp
+% Logo Options: gt, coc, cse, cs, ic, scp, isye, soa
 \usepackage[cse]{gt-letterhead}
 ```
 
@@ -26,6 +26,22 @@ You still have to set the footer text yourself like this
 \fromdept{College of Computing}
 ```
 because the department guidelines are unclear on if you should specify the college or school.
+
+## Footer customization
+
+The footer address and phone number default to the main GT campus values but can be overridden:
+```latex
+\fromaddr{Atlanta, Georgia 30332-0700 U.S.A.}
+\fromphone{404.894.9044}
+```
+
+## cc and enclosures
+
+You can optionally add cc and enclosure lines to the end of the letter:
+```latex
+\cclist{Dean Smith, Dr.\ Jones}
+\encllist{Curriculum Vitae, Transcript}
+```
 
 ## What it looks like
 
