@@ -1,5 +1,10 @@
 # Georgia Tech Letterhead in LaTeX
 
+[![Open in Overleaf](https://img.shields.io/badge/Open%20in-Overleaf-47A141?logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri=https://github.com/sbryngelson/georgia-tech-letterhead/archive/refs/heads/master.zip)
+[![GitHub release](https://img.shields.io/github/v/release/sbryngelson/georgia-tech-letterhead)](https://github.com/sbryngelson/georgia-tech-letterhead/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![LaTeX](https://img.shields.io/badge/Built%20with-LaTeX-008080?logo=latex&logoColor=white)](https://www.latex-project.org/)
+
 This is a reproduction of the Georgia Tech letterhead in Latex.
 It uses the new GT [branding](https://brand.gatech.edu/) (per Oct 1, 2021) and [replicates this document](https://brand.gatech.edu/brand-assets/letterhead).
 I used the free typeface alternatives [suggested by the styleguide](https://brand.gatech.edu/our-look/typography).
